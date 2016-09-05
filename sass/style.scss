@@ -1,0 +1,46 @@
+/*!
+Theme Name: 	Ventififteen
+Theme URI: 		https://wordpress.org/themes/twentyfifteen/
+Author: 		Kenneth Dait
+Author URI: 	https://kenanigans.com/ventififteen/
+Description: 	A child theme of the classic Twenty Fifteen theme.
+Template: 		twentyfifteen
+License: 		GNU General Public License v2 or later
+License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 			blog, two-columns, left-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: 	ventififteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+h1, h2, h3, h4, h5, h6, .site-title, #secondary {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/**
+ * 16.0 Media Queries
+ */
+
+/*
+ * Does the same thing as <meta name="viewport" content="width=device-width">,
+ * but in the future W3C standard way. -ms- prefix is required for IE10+ to
+ * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
+ * the meta tag. See https://core.trac.wordpress.org/ticket/25888.
+ */
+
+@-ms-viewport {
+	width: device-width;
+}
+
+@viewport {
+	width: device-width;
+}
+
+@import 'media_queries/16.1_mobile_large';
+@import 'media_queries/16.2_tablet_small';
+@import 'media_queries/16.3_tablet_large';
+@import 'media_queries/16.4_desktop_small';
+@import 'media_queries/16.5_desktop_medium';
+@import 'media_queries/16.6_desktop_large';
+@import 'media_queries/16.7_desktop_x-large';
