@@ -6,17 +6,20 @@ module.exports = function(grunt) {
 		/**
 		 * Sass
 		 */
-		sass: {
-		  dev: {
-		    options: {
-		      style: 'expanded',
-		      sourcemap: 'none',
-		    },
-		    files: {
-		      'style.css': 'sass/style.scss'
-		    }
-		  }
-		},
+			sass: {
+			  dist: {
+			    options: {
+			      sourcemap: 'none',
+			    },
+			    files: [{										// Dictionary of files
+			      expand: true,
+			      cwd: 'sass',
+			      src: ['**/*.scss'],
+			      dest: 'css',
+			      ext: '.css'
+			    }]
+			  } // .dev
+			}, // .sass
 
 	  	/**
 	  	 * Watch
@@ -27,9 +30,17 @@ module.exports = function(grunt) {
 				tasks: ['sass']
 			}
 		},
-
+		autoprefixer: {
+	    options: {
+	      browsers: ['last 2 versions', 'ie 8', 'ie 9']
+	    },
+	    your_target: {
+	      // Target-specific file lists and/or options go here. 
+	    },
+	  },
 	});
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.registerTask('default',['watch']);
 }
