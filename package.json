@@ -1,7 +1,7 @@
 {
   "name": "ventififteen",
   "version": "0.0.1",
-  "description": "",
+  "description": "A WordPress child theme of Twenty Fifteen",
   "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,5 +20,10 @@
     "grunt": "^1.0.1",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0"
+  },
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0"
   }
 }
