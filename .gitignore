@@ -1,4 +1,4 @@
 .CFUserTextEncoding
 .DS_Store
-.sass_cache/*
-node_modules/*
+.sass_cache/**
+node_modules/**
